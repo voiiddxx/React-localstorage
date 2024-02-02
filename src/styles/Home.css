@@ -13,3 +13,25 @@
     flex-direction:column;
     color:white;
 }
+
+.detail{
+    height:100px;
+    width:600px;
+    background-color:white; 
+    margin-bottom:15px;
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    gap:5px;
+    justify-content:center;
+    flex-direction:column;
+}
+
+.detail h1{
+    font-size:15px;
+    color:black;
+}
+
+.detail h1 span{
+    color : blue;
+}

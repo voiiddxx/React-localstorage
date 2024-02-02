@@ -6,6 +6,10 @@ const Home = () => {
   const [email, setemail] = useState(null);
   const [username, setusername] = useState(null);
   const [password, setpassword] = useState(null);
+
+  const localEmail = localStorage.getItem("email");
+  const LocalUsername = localStorage.getItem("username");
+  const localPassword = localStorage.getItem("password");
   
 
   const handleSubmit = () => {
@@ -26,7 +30,15 @@ const Home = () => {
     }
   }
   return (
+
+
+    <>
     <div className='home'>
+      <div className="detail">
+        <h1>Your Username : <span>{LocalUsername}</span> </h1>
+        <h1>Your Email Address : <span> {localEmail}</span> </h1>
+        <h1>Your Password : <span>{localPassword}</span> </h1>
+      </div>
       <div className="card">
       <div className='heading' >
         <h1>Update Your Accont Details</h1>
@@ -48,6 +60,7 @@ const Home = () => {
 
       </div>
     </div>
+    </>
   )
 }
 
